@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9BFF7B"
+        android:text="Agenda del doctor Emilio Saucedo Martinez"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nombre del paciente"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Horas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hora"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+            <TimePicker
+                android:id="@+id/timepicker"
+                android:layout_width="match_parent"
+                android:layout_height="371dp" />
+
+            <TextView
+        android:id="@+id/hora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:inputType="phone"
+        android:text="09:00:00"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Motivo:"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/cita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#FFFFFF"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiempo de duración"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/tiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        android:text="Guardar cita" />
+
+    <TextView
+        android:id="@+id/citaguardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cita:" />
+
+
+        </LinearLayout>
+ </ScrollView>
+
+</LinearLayout>
